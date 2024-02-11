@@ -26,7 +26,7 @@ Provide the following attributes to the `<prism-remote>` tag:
 
 If you are using Github it's possible to provide the natural URL instead of the raw URL. For 
 example: https://github.com/Fingel/prism-remote/blob/main/prism-remote.js instead of https://raw.githubusercontent.com/Fingel/prism-remote/main/prism-remote.js
-. The attribution link at the bottom will poin to the natural URL.
+. The attribution link at the bottom will point to the natural URL.
 
 The attribution link has a class of `prism-remote-attribution` so you can style it (or hide it alltogether).
 
