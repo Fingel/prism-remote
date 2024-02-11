@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://unpkg.com/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet">
+</head>
+<body>
+    <h2>Github source with limited line range</h2>
+    <prism-remote src="https://github.com/Fingel/prism-remote/blob/main/prism-remote.js"
+            start="1"
+            end="40"
+            lang="javascript"
+    ></prism-remote>
+
+    <h2>Raw source with all lines</h2>
+    <prism-remote src="https://raw.githubusercontent.com/Fingel/prism-remote/main/prism-remote.js" lang="javascript"></prism-remote>
+
+    <script src="prism-remote.js" type="module"></script>
+    <script src="https://unpkg.com/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://unpkg.com/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>
