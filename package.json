@@ -1,0 +1,26 @@
+{
+  "name": "prism-remote",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A custom element for displaying remote code blocks with syntax highlighting provided by Prism",
+  "main": "prism-remote.js",
+  "module": "prism-remote.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Fingel/prism-remote.git"
+  },
+  "keywords": [
+    "prism",
+    "web components",
+    "custom elements"
+  ],
+  "author": "Austin Riba <austin@m51.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fingel/prism-remote/issues"
+  },
+  "homepage": "https://github.com/Fingel/prism-remote#readme"
+}
