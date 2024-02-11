@@ -3,7 +3,7 @@ export class PrismRemote extends HTMLElement {
         super();
     }
 
-    async fetchGithubSrc(url) {
+    async fetchSrc(url) {
         const response = await fetch(url);
         if (!response.ok) {
             throw new Error("Failed to fetch source.");
@@ -38,7 +38,7 @@ export class PrismRemote extends HTMLElement {
             return;
         }
 
-        let code = await this.fetchGithubSrc(rawUrl);
+        let code = await this.fetchSrc(rawUrl);
         let codeLines = code.split("\n");
         const start = this.hasAttribute("start")
             ? this.getAttribute("start")
