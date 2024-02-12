@@ -46,7 +46,7 @@ export class PrismRemote extends HTMLElement {
         const end = this.hasAttribute("end")
             ? this.getAttribute("end")
             : codeLines.length;
-        codeLines = codeLines.splice(start - 1, end);
+        codeLines = codeLines.splice(start - 1, end - start + 1);
         code = codeLines.join("\n");
 
         const codePre = document.createElement("pre");
