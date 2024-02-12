@@ -40,12 +40,18 @@ export class PrismRemote extends HTMLElement {
 
         let code = await this.fetchSrc(rawUrl);
         let codeLines = code.split("\n");
-        const start = this.hasAttribute("start")
-            ? this.getAttribute("start")
-            : 1;
-        const end = this.hasAttribute("end")
-            ? this.getAttribute("end")
-            : codeLines.length;
+        let start = 1;
+        if (this.hasAttribute("start")) {
+            start = this.getAttribute("start");
+            srcUrl = `${srcUrl}#L${start}`;
+        }
+        let end = codeLines.length + 1;
+        if (this.hasAttribute("end")) {
+            end = this.getAttribute("end");
+            if (this.hasAttribute("start")) {
+                srcUrl = `${srcUrl}-L${end}`;
+            }
+        }
         codeLines = codeLines.splice(start - 1, end - start + 1);
         code = codeLines.join("\n");
 
